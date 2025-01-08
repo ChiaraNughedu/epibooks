@@ -10,7 +10,7 @@ class AllTheBooks extends Component {
           {fantasy.map((libro) => {
             return (
               <Col xs={12} md={6} lg={4} xl={3} key={libro.asin}>
-                <Card style={{ width: "18rem" }}>
+                <Card className="d-flex h-100" style={{ width: "15rem" }}>
                   <Card.Img variant="top" src={libro.img} className="w-100" />
                   <Card.Body>
                     <Card.Title>{libro.title}</Card.Title>
