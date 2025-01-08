@@ -9,7 +9,7 @@ class AllTheBooks extends Component {
         <Row className="mx-auto">
           {fantasy.map((libro) => {
             return (
-              <Col xs={12} md={4} lg={2} xl={2} key={libro.asin}>
+              <Col xs={12} sm={6} md={4} lg={3} xl={2} key={libro.asin}>
                 <Card className="d-flex h-100" style={{ width: "13rem" }}>
                   <Card.Img variant="top" src={libro.img} className="w-100" />
                   <Card.Body>
