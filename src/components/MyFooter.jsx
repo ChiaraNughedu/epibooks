@@ -1,12 +1,27 @@
+import { Container, Row, Col } from 'react-bootstrap';
+import './MyFooter.css';
 
-
-const MyFooter = function() {
-    return (
-        <footer>
+const MyFooter = () => {
+  return (
+    <footer className="bg-dark text-white text-center py-3">
+      <Container fluid={true}>
+        <Row>
+          <Col md={3}>
             <a href="#contatti">Contatti</a>
-            <a href="chisiamo">Chi Siamo</a>
+          </Col>
+          <Col md={3}>
             <a href="#social">Social</a>
-        </footer>
-    )
+          </Col>
+          <Col md={3}>
+            <a href="#iscriviti">Newsletter</a>
+          </Col>
+          <Col md={3}>
+            <p>&copy;Epibooks, 2025</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
 }
-export default MyFooter
+
+export default MyFooter;
